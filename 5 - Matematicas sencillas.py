@@ -1,3 +1,20 @@
+'''
+Escribe un programa que pida dos números y que devuelva su suma, resta, producto y división.
+
+Restricciones
+Convertir las cadenas de entrada en números
+Separar convenientemente la entrada, transformación de cadena en números y salida separados
+Crea una única sentencia de salida con los saltos de línea adecuados (sólo un print)
+
+Retos
+1 - Controla que las entradas sean números de forma que el programa no avance si no se introduce un número
+2 - No permitas introducir números negativos
+'''
+
+print("")
+print(">>>>>     OPERACIONES ARITMÉTICAS     <<<<<")
+print("")
+
 while True:
     numero1 = input("Introduce un número > ")
     try:

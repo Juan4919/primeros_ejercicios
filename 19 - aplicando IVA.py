@@ -1,3 +1,17 @@
+'''
+Según el pais se aplica un tipo general de IVA u otro. Haz un programa que aplique el tipo de iva adecuado según el pais de origen
+
+Seguir la siguiente tabla. El programa debe mostrar la base, el iva aplicado en % y en € y el precio final.
+
+Restricciones
+1 - Las cantidades en € deben aparecer ajustadas al céntimo
+2 - Utilizar una sola instrucción de impresión de resultados
+'''
+
+print("")
+print(">>>>>     IVA GENERAL POR PAISES     <<<<<")
+print("")
+
 # Diccionario IVA
 iva_ue = {
     'Alemania': 19,

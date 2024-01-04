@@ -1,3 +1,19 @@
+'''
+Pide la entrada del ancho y profundo de la habitación en metros. Devuelve la superficie en metros cuadrados y en yardas cuadradas (tomando la referencia de aquí).
+
+Restricciones
+1 - Mantener los cálculos separados de la salida
+2 - Usa una constante para las conversiones de unidades (aquí)
+
+Retos
+1 - Fuerza a que las entradas sean numéricas. Si no son numericas el usuario no podrá continuar.
+2 - Crea una versión del programa que permita elegir si la entrada va en metros o en yardas
+'''
+
+print("")
+print(">>>>>     ÁREA DE UN RECTÁNGULO     <<<<<")
+print("")
+
 while True:
     ancho = input(">>>>>>>CALCULADORA DE SUPERFICIE<<<<<<<\n \nIntroduce el ancho de la estancia: ")
     print()

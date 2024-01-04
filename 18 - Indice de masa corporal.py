@@ -1,6 +1,34 @@
+'''
+Craer un programa que calcule el indice de masa corporal de una persona según la fórmula
+
+IMC=pesoaltura2
+
+Si el índice de masa corporal está entre 18,5 y 15 el peso se considera normal. Por encima se considera sobrepeso, por debajo delgadez.
+
+Haz un programa que pida ambos datos, devuelva tu índice de masa corporal e indique si estás por encima o por debajo de la normalidad
+
+Restricciones
+1 - Impedir que el programa continúe si se introducen datos no numéricos
+
+Retos
+1 - Crear una versión que acepte unidades de altura y peso anglosajonas (deberás buscar y cambiar la fórmulas)
+2 - Partiendo de la siguiente tabla
+
+Clasificación	IMC
+Delgadez Severa	< 16,00
+Delgadez Moderada	16,00 - 16,99
+Delgadez leve	17,00 - 18,49
+Normal	18,50 - 25,00
+Preobeso	25,01 - 29,99
+Obesidad leve	30,00 - 34,99
+Obesidad media	35 - 39,99
+Obesidad mórbida	>= 40
+
+Devolver el diagnóstico según el imc.
+'''
+
 print("")
-print(">>>> CALCULADORA DE IMC <<<<")
-print("")
+print(">>>>>     CALCULADORA DE IMC     <<<<<")
 print("")
 # Solicitar y validar el peso
 while True:
