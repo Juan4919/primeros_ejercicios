@@ -13,10 +13,12 @@ print("")
 print(">>>>>     HOLA MUNDO     <<<<<")
 print("")
 
+# Entrada de datos
 saludo = input("Hola, ¿cómo te llamas? ")
+
+# Salida y concatenación
 print("Hola", saludo)
 print()
-
 
 # RETO (escribir sin variables)
 print("Hola", input("¿Como te llamas? "))
@@ -26,14 +28,12 @@ print()
 # RETO (devolver diferentes saludos)
 saludo = input("Hola, ¿como te llamas? ")
 if saludo == "Juan":
-    print("Que tal Juanillo")
+    print("Hola Juan!")
 elif saludo == "Antonio":
-    print("Hola tio")
+    print("Hola Antonio, ¿qué tal?")
 elif saludo == "Peter":
-    print("Que pasa you")
+    print("Que pasa Peter, cuanto tiempo")
 elif saludo == "Paula":
-    print("Hola Pau!!")
-elif saludo == "Lolo":
-    print("Hola colega")
+    print("Hola Paula, ¡que bueno  verte!")
 else: 
     print("Hola, no te conozco")

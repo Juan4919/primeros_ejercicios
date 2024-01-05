@@ -1,5 +1,6 @@
 '''
-5 litros de pintura dan para pintar 100 metros cuadrados de techo. Teniendo esto en cuenta haz un programa que diga cuantos botes de 5 litros de pintura hay que comprar para pintar un techo de anchura y profundidad informada por el usuario (en metros). Devuelve el número de botes suficiente y por supuesto en números enteros.
+5 litros de pintura dan para pintar 100 metros cuadrados de techo. Teniendo esto en cuenta haz un programa que diga cuantos botes de 5 litros de pintura hay que 
+comprar para pintar un techo de anchura y profundidad informada por el usuario (en metros). Devuelve el número de botes suficiente y por supuesto en números enteros.
 
 Necesitarás 12 litros para pintar 240 metros cuadrados de techo.
 
@@ -16,17 +17,16 @@ Retos
 '''
 
 print("")
-print(">>>>>     PINTANDO EL TECHO     <<<<<")
+print(">>>>>     CALCULADORA DE PINTURA     <<<<<")
 print("")
 
 # Calculo litros de pintura 
-print(">>> CALCULADORA DE PINTURA <<<")
+ancho = float(input("¿Cuánto es el ancho de la habitación? > "))
 print()
-ancho = int(input("¿Cuánto es el ancho de la habitación)? (en metros) > "))
-profundidad = int(input("¿Cuánto es la profundidad de la habitación? (en metros) > "))
-superficie = ancho*profundidad
-litrosNecesarios = int((5/100)*superficie)
-botesNecesarios = litrosNecesarios/5
+profundidad = float(input("¿Cuánto es la profundidad de la habitación? > "))
 print()
-
-print("En base a las medidas indicadas, necesitarás", litrosNecesarios, "litros, que equivalen a", round(botesNecesarios), "botes de pintura")
+superficie = round(ancho*profundidad, 2)
+litrosNecesarios = round(float((5/100)*superficie), 2)
+botesNecesarios = round(litrosNecesarios/5)
+print("En base a las medidas indicadas, y dado que tienes que pintar",superficie,"m2, necesitarás",litrosNecesarios,"litros, que equivalen a",botesNecesarios,"botes de pintura")
+print()
