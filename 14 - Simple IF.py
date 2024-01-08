@@ -12,8 +12,7 @@ Si el precio es 10 €
         El total es 10.00€
 
 Restricciones
-1 - Implementar este programa usando sólo un if sin usar else
-2 - Las cifras en € deben estar redondeadas al céntimo
+1 - Implementar este programa usando sólo un if sin usar else25
 3 - Utiliza una sola sentencia print para dar el resultado
 
 Retos
