@@ -1,5 +1,6 @@
 '''
-Construye un programa que aplique una tasa a un precio en función de donde se aplique. Así si la provincia en la que se aplica es 'VA' (Valencia) se debe incrementar el precio en un 5,5%. En otro caso no se aplicará esta tasa. La salida debe ser distinta en función de la provincia, así:
+Construye un programa que aplique una tasa a un precio en función de donde se aplique. Así si la provincia en la que se aplica es 'VA' (Valencia) se debe incrementar el precio en un 5,5%.
+En otro caso no se aplicará esta tasa. La salida debe ser distinta en función de la provincia, así:
 
 Si el precio es 10 €
 - Provincia = 'VA':
@@ -25,9 +26,9 @@ print(">>>>>     TASA AUTONÓMICA     <<<<<")
 print("")
 
 precio= float(input("Introduce el precio que deseas ver > "))
-provincia= input("¿En qué provincia deseas revisar la tasa a aplicar? > ")
+provincia= input("¿En qué provincia deseas revisar la tasa a aplicar? > ").lower()
 
-if provincia == "Valencia" or "valencia":
-    precio = (precio + 0.55) 
+if provincia == "valencia":
+    precio_impuesto = (precio * 1.055) 
     
-print("El precio",precio,"es el valor final aplicado.")
+print("El precio final es",f"{precio_impuesto:.2f}","€")

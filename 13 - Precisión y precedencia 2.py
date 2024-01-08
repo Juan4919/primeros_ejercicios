@@ -1,5 +1,6 @@
 '''
-Introduciremos aquí los exponentes. En préstamos o inversiones a largo plazo se suele utilizar más el interes compuesto que el simple (diferencias entre ambos). Se trata ahora de escribir un programa que calcule el interés compuesto sobre un capital a lo largo del tiempo.
+Introduciremos aquí los exponentes. En préstamos o inversiones a largo plazo se suele utilizar más el interes compuesto que el simple (diferencias entre ambos). Se trata ahora 
+de escribir un programa que calcule el interés compuesto sobre un capital a lo largo del tiempo.
 
 El programa ha de pedir el capital inicial, el interes anual, el número de años de la inversión y el número de veces que se calcula en interés en el año. La fórmula a aplicar es:
 
@@ -37,11 +38,22 @@ print("")
 
 try:
     capital_inicial=float(input("Introduce el capital inicial > "))
-    interes_anual=(float(input("¿A que interés será la inversión? > "))/100)
+    interes_anual=(float(input("¿A que porcentaje de interés será la inversión? > "))/100)
     anyos=int(input("¿Cuántos años de duración tendrá la inversión? > "))
     acumulacion_interes=int(input("¿Cuantas veces al año se calculará el interés al año? > "))
     cantidad_final = capital_inicial * (1 + interes_anual / acumulacion_interes) ** (acumulacion_interes * anyos)
 
-    print("La cantidad final de la inversión será de ", round(cantidad_final, 2))
+    print("La cantidad final de la inversión será de ",f"{cantidad_final:.2f}")
+    print()
 except ValueError:
     print("Error: Por favor, asegúrate de ingresar valores numéricos válidos.")
+    
+print("Variante: obtención del capital inicial")
+print()
+capital_final=float(input("Introduce el capital final que deseas obtener > "))
+interes_anual=(float(input("¿A que porcentaje de interés será la inversión? > "))/100)
+anyos=int(input("¿Cuántos años de duración tendrá la inversión? > "))
+acumulacion_interes=int(input("¿Cuantas veces al año se calculará el interés al año? > "))
+capital_inicial = capital_final / (1 + interes_anual / acumulacion_interes) ** (acumulacion_interes * anyos)
+
+print("La cantidad necesaria para obtener los",capital_final,"€ indicados, serían",f"{capital_inicial:.2f}","€")

@@ -1,5 +1,6 @@
 '''
-Se trata de crear un programa que pida usuario y contraseña y que valide si coinciden. En el caso de que lo hagan devolver un mensaje Entró en el sistema y en el contrario No te conozco, no pasas
+Se trata de crear un programa que pida usuario y contraseña y que valide si coinciden. En el caso de que lo hagan devolver un mensaje Entró en el sistema y en el contrario 
+No te conozco, no pasas
 
 Lo interesante de este programa no es sólo la estructura de if necesarias, sino también la estructura de datos necesaria para almacenar usuarios y sus contraseñas.
 
@@ -32,7 +33,7 @@ while True:
         print("Contraseña incorrecta")
     else:
         break
-if usuario == users and contraseña == password:
+if contraseña == password:
     print("")
     print("")
     print("¡Correcto!, ha entrado en el sistema")
